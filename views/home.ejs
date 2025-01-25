@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <title>Drive Clone</title>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 shadow">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <a href="/" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Drive Logo">
+        <span class="self-center text-xl font-semibold whitespace-nowrap">Drive Clone</span>
+      </a>
+      <div class="flex items-center lg:order-2">
+        <a href="/user/login"
+          class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2">Login</a>
+        <a href="/signup"
+          class="ml-4 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Sign
+          Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="bg-blue-600 text-white py-16">
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold">Your Files, Always Accessible</h1>
+      <p class="mt-4 text-lg">Store, share, and collaborate on your files with ease. Start uploading now!</p>
+      <a href="/get-started"
+        class="mt-8 inline-block bg-white text-blue-600 font-semibold py-2 px-6 rounded-lg shadow hover:bg-gray-100">Get
+        Started</a>
+    </div>
+  </div>
+
+  <!-- File Upload Section -->
+  <section class="max-w-screen-xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Upload Your Files</h2>
+    <form class="flex items-center space-x-4" action="/upload" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" id="file"
+        class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600">
+      <button type="submit"
+        class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 focus:ring-4 focus:ring-blue-300">Upload</button>
+    </form>
+  </section>
+
+  <!-- File Display Section -->
+  <section class="max-w-screen-xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Your Files</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Example File Cards -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="https://via.placeholder.com/150" alt="File Preview" class="rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 truncate">File1.jpg</h3>
+        <div class="mt-2 flex justify-between items-center">
+          <a href="#" class="text-blue-600 text-sm">View</a>
+          <a href="#" class="text-red-600 text-sm">Delete</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="https://via.placeholder.com/150" alt="File Preview" class="rounded-lg mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 truncate">Document.pdf</h3>
+        <div class="mt-2 flex justify-between items-center">
+          <a href="#" class="text-blue-600 text-sm">View</a>
+          <a href="#" class="text-red-600 text-sm">Delete</a>
+        </div>
+      </div>
+      <!-- Add more cards dynamically -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="text-center">
+      <p>&copy; 2025 Drive Clone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
